@@ -28,14 +28,12 @@ Produced by Anonymous Volunteers
 
 
 
-
+#%%
 PRIDE AND PREJUDICE
 
 By Jane Austen
 
-
-
-Chapter 1
+CHAPTER 1
 
 
 It is a truth universally acknowledged, that a single man in possession
@@ -13425,3 +13423,13 @@ This Web site includes information about Project Gutenberg-tm,
 including how to make donations to the Project Gutenberg Literary
 Archive Foundation, how to help produce our new eBooks, and how to
 subscribe to our email newsletter to hear about new eBooks.
+
+max = 0
+index = 0
+# Find the longest sentence in the work
+for key, sentence in enumerate(blob.sentences):
+    if(len(sentence.words) > max):
+        max = len(sentence.words)
+        index = key
+print(max)
+print(blob.sentences[index])
