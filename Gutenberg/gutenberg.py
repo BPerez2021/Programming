@@ -39,7 +39,7 @@ text = strip_headers(load_etext(2701)).strip()
 blob = TextBlob(text)
 # print(text)  # prints 'MOBY DICK; OR THE WHALE\n\nBy Herman Melville ...'
 # This will save the text to a local .txt file in this directory.
-source = open('in-class/week-6/mobydick.txt','w',encoding="utf-16",newline='\n')
+source = open('Gutenberg/janeausten.txt','w',encoding="utf-16",newline='\n')
 source.write(text)
 source.close()
 
