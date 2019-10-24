@@ -54,3 +54,33 @@ print(re.search(expression, time1))
 print(re.search(expression, time2))
 print(re.search(expression, time3))
 print(re.search(expression, time4))
+
+
+#%%
+#Classes
+class MyClass1:
+    """A simple example class"""
+    i = 12345
+    def f(self):
+        return 'hello world'
+
+#%%
+class MyClass2:
+    """A simple example class"""
+    i = 12345
+    def __init__(self,name):
+        self.name = name
+    def f(self):
+        return 'hello world from ' + self.name
+
+#%%
+from PIL import Image
+
+#%%
+mode = 'RGBA'
+size = (100, 100)
+color = "black"
+ourimage = Image.new(mode, size, color)
+ourimage
+
+#%%
