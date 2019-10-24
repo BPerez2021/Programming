@@ -27,3 +27,30 @@ zipcode5p4 = "12345-1234"
 expression = "^\d{5}(-\d{4})?$"
 print(re.search(expression, zipcode5n))
 print(re.search(expression, zipcode5p4))
+
+#%%
+time0 = "5pm"
+time1 = "6am"
+time2 = "12:00p"
+time3 = "13:00a"
+time4 = "00:02pm"
+expression = "^\d?\d(:\d\d)?[ap]m?$"
+print(re.search(expression, time0))
+print(re.search(expression, time1))
+print(re.search(expression, time2))
+print(re.search(expression, time3))
+print(re.search(expression, time4))
+
+
+#%%
+time0 = "5pm"
+time1 = "6am"
+time2 = "12:00p"
+time3 = "13:00a"
+time4 = "00:02pm"
+expression = "^([1-9]|1[0-2])(:\d\d)?[ap]m?$"
+print(re.search(expression, time0))
+print(re.search(expression, time1))
+print(re.search(expression, time2))
+print(re.search(expression, time3))
+print(re.search(expression, time4))
