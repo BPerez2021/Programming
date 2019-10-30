@@ -201,7 +201,7 @@ book.words.count('tapping')
 
 
 #%%
-# [2-2] ON YOUR OWN:
+# [2-2] ON YOUR OWN: ATTEMPT ONE
 
 # Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
 max = 5
@@ -211,10 +211,9 @@ for key, sentence in enumerate(blob.sentences):
         max = len(sentence.words)
         index = key
         print(sentence)
-#Only provided 4 sentences even though I request 5 and even attempted to request 6 sentences to test (see below)
-
+#Only provided 4 sentences even though I request 5 
 #%%
-# [2-2] ON YOUR OWN:
+# [2-2] ON YOUR OWN: ATTEMPT TWO
 
 # Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
 max = 6
@@ -224,7 +223,21 @@ for key, sentence in enumerate(blob.sentences):
         max = len(sentence.words)
         index = key
         print(sentence)
-#Only provided 4 sentences even though I request 5 and even attempted to request 6 sentences to test
+#I even attempted to request 6 sentences to test
+
+
+#%%
+# [2-2] ON YOUR OWN: ATTEMPT THREE (IN CLASS)
+
+# Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
+max = 6
+index = 0
+for key, sentence in enumerate(blob.sentences):
+    if(len(sentence.words) > max):
+        max = len(sentence.words)
+        index = key
+        print(sentence)
+#I even attempted to request 6 sentences to test
 
 
 #%%
