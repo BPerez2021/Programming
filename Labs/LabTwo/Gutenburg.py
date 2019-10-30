@@ -247,3 +247,22 @@ for key, sentence in enumerate(blob.sentences):
 
 ##Don't have the ability to make tables
 #Used Lab Computers
+
+#%%
+#Notes
+list = [1,2,3,4,5,6,7,8,9,10]
+list[-5:]
+#results [6,7,8,9,10]
+list[-1:]
+#result [10]
+list[:-5]
+#results [1,2,3,4,5]
+list[:-1]
+#results[1,2,3,4,5,6,7,8,9]
+#
+#
+#
+#
+#
+#
+#
