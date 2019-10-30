@@ -204,17 +204,6 @@ book.words.count('tapping')
 # [2-2] ON YOUR OWN:
 
 # Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
-from gutenberg.acquire import load_etext
-from gutenberg.cleanup import strip_headers
-from textblob import TextBlob
-
-text = strip_headers(load_etext(1065)).strip()
-blob = TextBlob(text)
-# print(text)  # prints 'MOBY DICK; OR THE WHALE\n\nBy Herman Melville ...'
-# This will save the text to a local .txt file in this directory.
-source = open('Labs/TheRaven.txt','w',encoding="utf-16",newline='\n')
-source.write(text)
-source.close()
 max = 6
 index = 0
 for key, sentence in enumerate(blob.sentences):
@@ -223,9 +212,12 @@ for key, sentence in enumerate(blob.sentences):
         index = key
         print(sentence)
 #Only provided 4 sentences even though I request 5 and even attempted to request 6 sentences to test
+
+
 #%%
 # [2-3] ON YOUR OWN:
 
 # Using the code above for figures, create a new table that lists the top 10 most frequent words and how many times they occur in that text.
-#Don't have the ability to make tables
+
+##Don't have the ability to make tables
 #Used Lab Computers
