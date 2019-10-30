@@ -35,7 +35,7 @@ except:
 #               easy_install -U setuptools
 #                       error: [WinError 5] Access is denied: 'C:\\ProgramData\\Miniconda3\\Scripts\\easy_install-script.py'
 #       https://askubuntu.com/questions/975523/pip-install-gives-command-python-setup-py-egg-info-failed-with-error-code-1#  
-#  Classmate helped and now it has been successfully installed, may have down some steps backwards          
+#  Classmate helped and now it has been successfully installed, may have done some steps backwards          
 #  
 # 
 # 
