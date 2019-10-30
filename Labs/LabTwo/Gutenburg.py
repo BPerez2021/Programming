@@ -229,10 +229,10 @@ for key, sentence in enumerate(blob.sentences):
         max = len(sentence.words)
         index = key
         print(sentence)
-#Only provided 4 sentences even though I request 5
+#Only provided 4 sentences even though I request 5 and even attempted to request 6 sentences to test
 #%%
 # [2-3] ON YOUR OWN:
 
 # Using the code above for figures, create a new table that lists the top 10 most frequent words and how many times they occur in that text.
-#Don't have the knowledge not ability to make tables
-
+#Don't have the knowledge nor the ability to make tables
+#Used Lab Computers
