@@ -7,6 +7,11 @@ def length(ft):
     return (ft)*12
 
 #%%
+# 1 ft = 12 in
+def length(ft):
+    return (ft)/12
+
+#%%
 #Building upon the past free exercise
 #1 week = 7 days
 def weeks(day):
@@ -15,4 +20,9 @@ def weeks(day):
 #%%
 #1 day = 24 Hours
 def day(hours):
-    return (hours)/24
+    return (hours)*24
+
+#%%
+#1 days = 24 Hours
+def day(hours):
+    return (hours)*24
