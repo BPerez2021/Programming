@@ -227,5 +227,5 @@ for key, sentence in enumerate(blob.sentences):
 # [2-3] ON YOUR OWN:
 
 # Using the code above for figures, create a new table that lists the top 10 most frequent words and how many times they occur in that text.
-#Don't have the knowledge nor the ability to make tables
+#Don't have the ability to make tables
 #Used Lab Computers
