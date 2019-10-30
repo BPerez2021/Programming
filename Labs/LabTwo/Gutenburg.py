@@ -230,7 +230,7 @@ for key, sentence in enumerate(blob.sentences):
 # [2-2] ON YOUR OWN: ATTEMPT THREE (IN CLASS)
 
 # Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
-max = 6
+max = 0
 index = 0
 for key, sentence in enumerate(blob.sentences):
     if(len(sentence.words) > max):
