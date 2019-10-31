@@ -211,7 +211,9 @@ for key, sentence in enumerate(blob.sentences):
         max = len(sentence.words)
         index = key
         print(sentence)
-#Only provided 4 sentences even though I request 5 
+
+
+
 #%%
 # [2-2] ON YOUR OWN: ATTEMPT TWO
 from gutenberg.acquire import load_etext
@@ -228,7 +230,7 @@ for key, sentence in enumerate(blob.sentences):
         max = len(sentence.words)
         index = key
         print(sentence)
-#I even attempted to request 6 sentences to test
+
 
 
 #%%
@@ -270,10 +272,5 @@ list[:-5]
 #results [1,2,3,4,5]
 list[:-1]
 #results[1,2,3,4,5,6,7,8,9]
-#
-#
-#
-#
-#
 #
 #
