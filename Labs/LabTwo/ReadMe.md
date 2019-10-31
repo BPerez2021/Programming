@@ -1,3 +1,5 @@
+LAB TWO
+
 When I first began the project at home there were many struggles.
 I couldn't open items properly. Pip did not want to open. The file itsself, downloaded from Github, did not want to translate.
 I was easily confused my everything. And just overall couldn't focus or understand what was required.
