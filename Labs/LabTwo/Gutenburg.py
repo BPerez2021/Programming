@@ -249,7 +249,9 @@ for key, sentence in enumerate(blob.sentences):
                 max = len(sentence.words)
                 index = key
 
-sorted(mylist,key=itemgetter(1))
+mylistlen = sorted(mylist,key=itemgetter(1))
+
+print (mylistlen[-5:])
 
 
 
