@@ -152,7 +152,7 @@ fig.show()
 # Choose a text that was not previously analyzed above from Project Gutenberg.
 # 1. Write code that retrieves and writes the text to a file in the current project. You may save it to any file, but I recommend to save it to the lab2 subdirectory.
 from gutenberg.acquire import load_etext
-from gutenberg.cleanup import strip_headers bb
+from gutenberg.cleanup import strip_headers
 from textblob import TextBlob
 
 text = strip_headers(load_etext(1065)).strip()
@@ -214,7 +214,12 @@ for key, sentence in enumerate(blob.sentences):
 #Only provided 4 sentences even though I request 5 
 #%%
 # [2-2] ON YOUR OWN: ATTEMPT TWO
+from gutenberg.acquire import load_etext
+from gutenberg.cleanup import strip_headers
+from textblob import TextBlob
 
+text = strip_headers(load_etext(1065)).strip()
+blob = TextBlob(text)
 # Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
 max = 6
 index = 0
@@ -227,17 +232,23 @@ for key, sentence in enumerate(blob.sentences):
 
 
 #%%
-# [2-2] ON YOUR OWN: ATTEMPT THREE (IN CLASS)
-
+from operator import itemgetter
 # Write code that finds the top 5 longest sentences in the work. You may store or display them however you choose, and you may build off of the code above that finds the longest sentence.
+from textblob import TextBlob
 max = 0
 index = 0
+#find the longest sentence in work
+mylist = []
 for key, sentence in enumerate(blob.sentences):
-    if(len(sentence.words) > max):
-        max = len(sentence.words)
-        index = key
-        print(sentence)
-#I even attempted to request 6 sentences to test
+        mylist.append(
+                (sentence,len(sentence.words))
+                )
+        if(len(sentence.words) > max):
+                max = len(sentence.words)
+                index = key
+
+sorted(mylist,key=itemgetter(1))
+
 
 
 #%%
