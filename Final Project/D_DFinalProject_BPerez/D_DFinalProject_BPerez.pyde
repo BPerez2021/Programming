@@ -15,14 +15,16 @@ list_of_Race = ['Dragonborn','Dwarf','Elf','Gnome','Half-Elf','Half-Orc','Halfli
 list_of_Class = ['Barbarian','Bard','Cleric','Druid','Fighter','Monk','Paladin','Ranger','Rogue', 'Sorcerer', 'Warlock', 'Wizard'] 
 list_of_Origin = ['Acolyte','Criminal','Folk Hero','Noble','Soldier']
 
-class Race(object)
-
-
+#class Race(object)
 
 
 def setup():
-  size (700,500)
+  size(200,200);
+  f = createFont("Arial",26); 
 
- 
-def draw ():
-  background(222,184,135)
+def draw(): 
+  background(222,184,135);
+  textFont(f,26);
+  fill(0);
+  text("Race: Dragonborn",10,100);
+  
