@@ -84,7 +84,7 @@ def draw():
     Font1 = createFont("Old English Text MT", 26) 
     textFont(Font1)
     fill(0);
-    text("Intellegence:", 30, 350)
+    text("Intelligence:", 30, 350)
     text((int(ir)), 165, 350)
     
     Font1 = createFont("Old English Text MT", 26) 
@@ -152,7 +152,7 @@ def draw():
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
-        text("Intellegence:", 30, 350)
+        text("Intelligence:", 30, 350)
         text((int(random(3,19))), 165, 350)
         
         Font1 = createFont("Old English Text MT", 26) 
