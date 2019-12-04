@@ -39,6 +39,7 @@ cr = random(3, 19)
 acr = random(3, 19)
 inr = random(3, 19)
 
+
 def Font1():
     Font1 = createFont("Old English Text MT", 26) 
 
@@ -111,8 +112,8 @@ def draw():
     text("Initiative:", 30, 550)
     text((int(inr)), 140, 550)
     
-    if ((keyPressed) and (key == ' ')):
-        
+    
+    if ((keyPressed) and (key == ' ')):    
         Font1 = createFont("Old English Text MT", 30) 
         textFont(Font1)
         fill(0);
@@ -130,51 +131,54 @@ def draw():
         fill(0);
         newcchoice = int(random(len(classlist)))
         text(classlist[newcchoice], 600, 100)
-    
+        
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Strength:", 30, 200)
         text((int(random(3,19))), 135, 200)
-    
+        
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Dexterity:", 30, 250)
         text((int(random(3,19))), 140, 250)
-        
+            
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Constitution:", 30, 300)
         text((int(random(3,19))), 170, 300)
-        
+            
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Intelligence:", 30, 350)
         text((int(random(3,19))), 165, 350)
-        
+    
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Wisdom:", 30, 400)
         text((int(random(3,19))), 125, 400)
-        
+            
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Charisma:", 30, 450)
         text((int(random(3,19))), 140, 450)
-        
+            
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Armorclass:", 30, 500)
         text((int(random(3,19))), 160, 500)
-        
+            
         Font1 = createFont("Old English Text MT", 26) 
         textFont(Font1)
         fill(0);
         text("Initiative:", 30, 550)
         text((int(random(3,19))), 140, 550)
+        
+        #note
+    
